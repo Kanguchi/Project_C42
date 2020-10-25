@@ -22,7 +22,7 @@ function draw() {
   mn = minute();
   sc = second();
 
-  hrAngle = map(hr%12, 0, 60, 0, 360);
+  hrAngle = map(hr%12, 0, 12, 0, 360);
   mnAngle = map(mn, 0, 60, 0, 360);
   scAngle = map(sc, 0, 60, 0, 360);
   
@@ -39,7 +39,7 @@ function draw() {
 
   //hours Hand
   push();
-  rotate(hrAngle + 90);
+  rotate(hrAngle);
   stroke(39, 118, 12);
   strokeWeight(12);
   line(0, 0, 80, 0);
@@ -57,7 +57,7 @@ function draw() {
   stroke(39, 118, 12);
   strokeWeight(12);
   noFill();
-  arc(0, 0, 290, 290, 0.5, hrAngle+90);
+  arc(0, 0, 290, 290, 0.5, hrAngle);
   //seconds
   stroke(232, 131, 30);
   strokeWeight(5);
