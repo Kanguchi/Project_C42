@@ -14,6 +14,7 @@ function setup() {
 function draw() {
   background("snow");  
 
+  noStroke();
   textSize(40);
   fill(0);
   text(hr%12 + " : " + mn + " : " + sc, 115, 450)
