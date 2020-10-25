@@ -39,7 +39,7 @@ function draw() {
 
   //hours Hand
   push();
-  rotate(hrAngle);
+  rotate(hrAngle + 90);
   stroke(39, 118, 12);
   strokeWeight(12);
   line(0, 0, 80, 0);
@@ -57,7 +57,7 @@ function draw() {
   stroke(39, 118, 12);
   strokeWeight(12);
   noFill();
-  arc(0, 0, 290, 290, 0.5, hrAngle);
+  arc(0, 0, 290, 290, 0.5, hrAngle+90);
   //seconds
   stroke(232, 131, 30);
   strokeWeight(5);
